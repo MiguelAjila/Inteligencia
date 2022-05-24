@@ -7,5 +7,8 @@ def DuchaElec():
     #Como sabemos la temperatura es un elemento flotante.
     #Considerando el ambiente de Santo Domingo la temperatura normal es de 23 grados
     grados = 0.23
-
+    if Temperatura >= 0.5 and Temperatura <1:
+        print("Desea Enfriar el agua de la habitación " + Habitacion)
+        Desicion = input(" Si / No\n")
+        
     DuchaElec()
