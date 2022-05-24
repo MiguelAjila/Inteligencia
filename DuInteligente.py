@@ -28,5 +28,6 @@ def DuchaElec():
             print("La temperatura actual de la ducha es " + GradoDucha)
         else:
             print("Se mantuvo la temperatura de la habitacion "+Habitacion)
-            
+    else:
+        print("Temperatura inexistente")
     DuchaElec()
