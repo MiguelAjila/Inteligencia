@@ -21,5 +21,12 @@ def DuchaElec():
     elif Temperatura > 0 and Temperatura <= 0.49:
         print("Desea calentar el agua de la habitación " + Habitacion)
         Desicion = input(" Si / No\n")
+        if Desicion == 'Si':
+            # Subira la temperatura del agua
+            GradoDucha = str(Temperatura + grados)
+            print("Calentando el agua de la habitacion " + Habitacion)
+            print("La temperatura actual de la ducha es " + GradoDucha)
+        else:
+            print("Se mantuvo la temperatura de la habitacion "+Habitacion)
             
     DuchaElec()
