@@ -11,4 +11,12 @@ def DuchaElec():
         print("Desea Enfriar el agua de la habitación " + Habitacion)
         Desicion = input(" Si / No\n")
         
+        if Desicion == 'Si':
+            #Bajara la temperatura del agua
+            GradoDucha = str(Temperatura - grados)
+            print("Enfriando el agua de la habitacion " + Habitacion)
+            print("La temperatura actual de la ducha es " + GradoDucha)
+        else:
+            print("Se mantuvo la temperatura de la habitacion "+Habitacion)
+            
     DuchaElec()
